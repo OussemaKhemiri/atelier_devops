@@ -10,7 +10,7 @@ graph TD
         A --> E[Eureka]
         
         subgraph Microservices
-            M1[Product Service]
+            M1[Book Service]
             M2[Order Service]
             M3[User Service]
             M4[Inventory Service]
@@ -44,10 +44,3 @@ graph TD
 | Payment Service   | Processes financial transactions                                           |
 | *DB               | Dedicated database for each service (shown with entity name)               |
 
-classDef frontend fill:#4CAF50,stroke:#388E3C;
-    classDef security fill:#F44336,stroke:#D32F2F;
-    classDef database fill:#2196F3,stroke:#1976D2;
-    
-    F[Frontend]:::frontend
-    K[Keycloak]:::security
-    DB[(Database)]:::database
