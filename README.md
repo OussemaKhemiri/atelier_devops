@@ -43,3 +43,11 @@ graph TD
 | Inventory Service | Tracks stock levels and availability                                       |
 | Payment Service   | Processes financial transactions                                           |
 | *DB               | Dedicated database for each service (shown with entity name)               |
+
+classDef frontend fill:#4CAF50,stroke:#388E3C;
+    classDef security fill:#F44336,stroke:#D32F2F;
+    classDef database fill:#2196F3,stroke:#1976D2;
+    
+    F[Frontend]:::frontend
+    K[Keycloak]:::security
+    DB[(Database)]:::database
