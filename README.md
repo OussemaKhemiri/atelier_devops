@@ -1,31 +1,45 @@
+# Microservice Architecture
+
+```mermaid
 graph TD
-    subgraph " "
-        U["--------------------<br>      User      <br>____________________"]
-        F["--------------------<br>   Frontend   <br>____________________"]
-    end
-    
-    U --> F
+    U[User] --> F[Frontend]
     
     subgraph Docker Host
-        A["--------------------<br> API Gateway <br>____________________"]
-        K["--------------------<br>  Keycloak  <br>____________________"]
-        E["--------------------<br>   Eureka   <br>____________________"]
+        F --> A[API Gateway]
+        A --> K[Keycloak]
+        A --> E[Eureka]
         
         subgraph Microservices
-            M1["--------------------<br>Product Service<br>____________________"]
-            M2["--------------------<br> Order Service <br>____________________"]
-            M3["--------------------<br> User Service <br>____________________"]
-            M4["--------------------<br>Inventory Service<br>____________________"]
-            M5["--------------------<br>Payment Service<br>____________________"]
+            M1[Product Service]
+            M2[Order Service]
+            M3[User Service]
+            M4[Inventory Service]
+            M5[Payment Service]
         end
     end
 
-    F --> A
-    A --> K
-    A --> E
-    
-    M1 --> DB1["--------------------<br> Product DB <br>____________________"]
-    M2 --> DB2["--------------------<br>  Order DB  <br>____________________"]
-    M3 --> DB3["--------------------<br>   User DB   <br>____________________"]
-    M4 --> DB4["--------------------<br>Inventory DB<br>____________________"]
-    M5 --> DB5["--------------------<br>Payment DB<br>____________________"]
+    M1 --> DB1[(Product DB)]
+    M2 --> DB2[(Order DB)]
+    M3 --> DB3[(User DB)]
+    M4 --> DB4[(Inventory DB)]
+    M5 --> DB5[(Payment DB)]
+
+    %% Styling for boxes
+    classDef box fill:#f8f9fa,stroke:#333,stroke-width:2px;
+    class U,F,A,K,E,M1,M2,M3,M4,M5,DB1,DB2,DB3,DB4,DB5 box;
+```
+## Component Legend
+
+| Component         | Description                                                                 |
+|-------------------|-----------------------------------------------------------------------------|
+| User              | End-user interacting with the system                                       |
+| Frontend          | Web interface (React/Angular/Vue)                                          |
+| API Gateway       | Entry point for all requests (Spring Cloud Gateway)                        |
+| Keycloak          | Authentication and authorization server                                    |
+| Eureka            | Service discovery server                                                   |
+| Product Service   | Manages product catalog and inventory                                      |
+| Order Service     | Handles order processing and tracking                                      |
+| User Service      | Manages user profiles and authentication                                   |
+| Inventory Service | Tracks stock levels and availability                                       |
+| Payment Service   | Processes financial transactions                                           |
+| *DB               | Dedicated database for each service (shown with entity name)               |
