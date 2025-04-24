@@ -37,7 +37,12 @@ The **Library Management System** is a simple yet powerful application that allo
 
 <a name="Loan"></a>
 ## Loan
-...
+Loan management microservice with smart validation and automatic adjustment of return dates based on holidays.
+**Technologies**
+. Java 17
+. Spring Boot 3.x
+. Spring Data JPA
+. H2 Database
 
 <a name="Book"></a>
 ## Book
