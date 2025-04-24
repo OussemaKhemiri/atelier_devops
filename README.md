@@ -123,7 +123,85 @@ GET /loan/{loanId}
 ```
 <a name="Book"></a>
 ## Book
-...
+### Technologies
+- Java 17
+- Spring Boot 3.x
+- Spring Data JPA
+- H2 Database 
+### Functionalities
+- Complete CRUD for books
+- check book status
+### API Reference
+#### Get all books
+
+```http
+  GET /books
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `title`      | `string` | **Not Required**. title of book to fetch |
+| `author`      | `integer` | **Not Required**. authorId of book to fetch |
+| `publisher`      | `integer` | **Not Required**. publisherId of book to fetch |
+| `genre`      | `integer` | **Not Required**. genreId of book to fetch |
+
+#### Get book by id
+
+```http
+  GET /books/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of BOOK to fetch |
+
+#### Update book by id
+
+```http
+  PUT /books/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of BOOK to fetch |
+
+
+#### Delete book by id
+
+```http
+  DELETE /books/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of BOOK to fetch |
+
+
+#### Add a new book
+
+```http
+  POST /books
+```
+
+#### Get books By authors
+
+```http
+  GET /books/getBooksByAuthors
+```
+
+
+#### Get books cout by  publisher
+
+```http
+  GET /books/getBooksCountByPublisher
+```
+
+
+#### Get books distribution by  status
+
+```http
+  GET /books/getBooksCountByStatus
+```
 
 <a name="Publisher"></a>
 ## Publisher
