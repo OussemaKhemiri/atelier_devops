@@ -28,7 +28,12 @@ The **Library Management System** is a simple yet powerful application that allo
  
 
 ## Navigation
-- [Loan](#Loan) - [Book](#Book) - [Publisher](#Publisher) - [Genre](#Genre) - [Author](#Author) - [Card](#Card)
+- [Loan](#Loan)
+- [Book](#Book)
+- [Publisher](#Publisher)
+- [Genre](#Genre)
+- [Author](#Author)
+- [Card](#Card)
 
 <a name="Loan"></a>
 ## Loan
