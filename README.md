@@ -9,32 +9,29 @@ The **Library Management System** is a simple yet powerful application that allo
 # Project Documentation
 
 ## Navigation
-- [Features](#features)
-- [Installation](#installation)
-- [API Reference](#api-reference)
-- [Contributing](Genre.md)
+- [Loan](#Loan) - [Book](#Book) - [Publisher](#Publisher) - [Genre](#Genre) - [Author](#Author) - [Card](#Card)
 
-<a name="features"></a>
+<a name="Loan"></a>
 ## Loan
 ...
 
-<a name="installation"></a>
+<a name="Book"></a>
 ## Book
 ...
 
-<a name="installation"></a>
+<a name="Publisher"></a>
 ## Publisher
 ...
 
-<a name="installation"></a>
+<a name="Genre"></a>
 ## Genre
 ...
 
-<a name="installation"></a>
+<a name="Author"></a>
 ## Author
 ...
 
-<a name="installation"></a>
+<a name="Card"></a>
 ## Card
 ...
 
