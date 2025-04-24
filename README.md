@@ -7,7 +7,7 @@ The **Library Management System** is a simple yet powerful application that allo
 ![Alt Text Description](diagramprojet.png)
 
 2.Library Domain Model Class Diagram
-![Alt Text Description](diagramclass.png)
+![Alt Text Description](diagclasse.PNG)
 # Project Documentation
 
 ## Navigation
