@@ -1,46 +1,53 @@
-# Microservice Architecture
+# Project Documentation
 
-```mermaid
-graph TD
-    U[User] --> F[Frontend]
-    
-    subgraph Docker Host
-        F --> A[API Gateway]
-        A --> K[Keycloak]
-        A --> E[Eureka]
-        
-        subgraph Microservices
-            M1[Book Service]
-            M2[Order Service]
-            M3[User Service]
-            M4[Inventory Service]
-            M5[Payment Service]
-        end
-    end
+## Entity Overview
 
-    M1 --> DB1[(Product DB)]
-    M2 --> DB2[(Order DB)]
-    M3 --> DB3[(User DB)]
-    M4 --> DB4[(Inventory DB)]
-    M5 --> DB5[(Payment DB)]
+The system contains the following core entities:
 
-    %% Styling for boxes
-    classDef box fill:#f8f9fa,stroke:#333,stroke-width:2px;
-    class U,F,A,K,E,M1,M2,M3,M4,M5,DB1,DB2,DB3,DB4,DB5 box;
-```
-## Component Legend
+### 1. User
+- **id**: `Integer` (Unique identifier)
+- **username**: `String` (Unique login name)
+- **email**: `String` 
+- **createdAt**: `DateTime`
+- **isActive**: `Boolean`
+- **roles**: `List<String>`
 
-| Component         | Description                                                                 |
-|-------------------|-----------------------------------------------------------------------------|
-| User              | End-user interacting with the system                                       |
-| Frontend          | Web interface (React/Angular/Vue)                                          |
-| API Gateway       | Entry point for all requests (Spring Cloud Gateway)                        |
-| Keycloak          | Authentication and authorization server                                    |
-| Eureka            | Service discovery server                                                   |
-| Product Service   | Manages product catalog and inventory                                      |
-| Order Service     | Handles order processing and tracking                                      |
-| User Service      | Manages user profiles and authentication                                   |
-| Inventory Service | Tracks stock levels and availability                                       |
-| Payment Service   | Processes financial transactions                                           |
-| *DB               | Dedicated database for each service (shown with entity name)               |
+### 2. Product
+- **productId**: `UUID`
+- **name**: `String`
+- **description**: `String`
+- **price**: `Double`
+- **stockQuantity**: `Integer`
+- **category**: `String`
 
+### 3. Order
+- **orderId**: `String`
+- **userId**: `Integer` (Foreign key to User)
+- **products**: `List<Product>`
+- **totalAmount**: `BigDecimal`
+- **orderDate**: `LocalDateTime`
+- **status**: `Enum` (PENDING, SHIPPED, DELIVERED)
+
+### 4. Address
+- **addressId**: `Long`
+- **street**: `String`
+- **city**: `String`
+- **state**: `String`
+- **zipCode**: `String`
+- **isPrimary**: `Boolean`
+
+### 5. Payment
+- **paymentId**: `UUID`
+- **orderId**: `String`
+- **amount**: `BigDecimal`
+- **paymentMethod**: `String`
+- **transactionDate**: `Instant`
+- **isSuccessful**: `Boolean`
+
+### 6. Review
+- **reviewId**: `Long`
+- **productId**: `UUID`
+- **userId**: `Integer`
+- **rating**: `Integer` (1-5)
+- **comment**: `String`
+- **createdAt**: `ZonedDateTime`
