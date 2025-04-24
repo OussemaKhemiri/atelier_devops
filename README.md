@@ -6,4 +6,18 @@ The **Library Management System** is a simple yet powerful application that allo
 ![Alt Text Description](diagramprojet.png)
 
 
-[View Contribution Guidelines](Genre.md)
+# Project Documentation
+
+## Navigation
+- [Features](#features)
+- [Installation](#installation)
+- [API Reference](#api-reference)
+- [Contributing](Genre.md)
+
+<a name="features"></a>
+## Features
+...
+
+<a name="installation"></a>
+## Installation
+...
