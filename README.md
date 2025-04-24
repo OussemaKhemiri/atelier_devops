@@ -15,9 +15,45 @@ The **Library Management System** is a simple yet powerful application that allo
 - [Contributing](Genre.md)
 
 <a name="features"></a>
-## Features
+## Loan
 ...
 
 <a name="installation"></a>
-## Installation
+## Book
 ...
+
+<a name="installation"></a>
+## Publisher
+...
+
+<a name="installation"></a>
+## Genre
+...
+
+<a name="installation"></a>
+## Author
+...
+
+<a name="installation"></a>
+## Card
+...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
