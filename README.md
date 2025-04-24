@@ -4,11 +4,28 @@ The **Library Management System** is a simple yet powerful application that allo
 
 # Architecture 
 1.Containerized Library Management System with Spring Cloud Ecosystem
+
 ![Alt Text Description](diagramprojet.png)
 
 2.Library Domain Model Class Diagram
+
 ![Alt Text Description](diagclasse.PNG)
-# Project Documentation
+
+3.Technology
+## System Architecture Overview
+
+| Architecture Layer       | Components                                                                 | Description                                                                 |
+|--------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| **Containerization**     | Docker                                                                     | Container orchestration for service deployment                              |
+| **API Gateway**          | Netflix Zuul                                                               | Routing and API request filtering                                           |
+| **Service Discovery**    | Eureka Server                                                              | Service registry for microservice coordination                              |
+| **Authentication**       | Keycloak                                                                   | Identity and Access Management (IAM) solution                               |
+| **Frontend**             | Angular                                                                    | Web interface                                                               |
+| **Microservices**        | Loan, Book, Publisher, Genre, Author, Card                                 | Domain-specific services                                                    |
+| **Databases**            | H2, MySQL, MongoDB                                                         | Polyglot persistence strategy                                               |
+| **OpenFeign**            | Spring OpenFeign                                                           | Declarative REST client for service-to-service communication                |
+| **Configuration Server** | Spring Config Server                                                       | Centralized configuration management                                        |
+ 
 
 ## Navigation
 - [Loan](#Loan) - [Book](#Book) - [Publisher](#Publisher) - [Genre](#Genre) - [Author](#Author) - [Card](#Card)
