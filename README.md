@@ -4,3 +4,17 @@ The **Library Management System** is a simple yet powerful application that allo
 
 # Architecture 
 ![Alt Text Description](diagramprojet.png)
+<details>
+<summary>📦 Installation</summary>
+
+```bash
+npm install my-package
+```
+</details>
+<details>
+<summary>aInstallation</summary>
+
+```bash
+npm install my-package
+```
+</details>
