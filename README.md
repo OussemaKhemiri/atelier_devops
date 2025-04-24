@@ -5,6 +5,7 @@ The **Library Management System** is a simple yet powerful application that allo
 # Architecture 
 1.Containerized Library Management System with Spring Cloud Ecosystem
 ![Alt Text Description](diagramprojet.png)
+
 2.Library Domain Model Class Diagram
 ![Alt Text Description](diagramclass.png)
 # Project Documentation
