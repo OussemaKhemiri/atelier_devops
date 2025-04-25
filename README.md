@@ -59,16 +59,32 @@ The **Library Management System** is a simple yet powerful application that allo
 <a name="Client"></a>
 
 1.Login
+The library login interface provides secure patron authentication through combined username and physical card number validation.
+
 ![Alt Text Description](loginPage.PNG)
+
 2.Homepage
+The library homepage serves as a patron's central portal, offering:
+- Dynamic book catalog browsing with filter/sort capabilities
+- Visual timeline of current/past loans
+
 ![Alt Text Description](clientPage.PNG)
 
 <a name="Admin"></a>
-
-
 1.User management
+Central interface for managing library patrons, allowing administrators to:
+- Create and manage user accounts
+- Issue and link library cards to users
+- Monitor and modify active loans (extend deadlines, resolve issues)
+
 ![Alt Text Description](adminbookPage.PNG)
+
 2.Book management
+- Central interface for managing library catalog data, enabling administrators to:
+- Create/Edit Books: Add new titles, update metadata, manage inventory
+- Manage Authors & Publishers: Maintain creator/organization databases
+- Organize Genres: Define and categorize literary genres
+
 ![Alt Text Description](adminuserPage.PNG)
 
 
