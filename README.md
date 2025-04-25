@@ -57,6 +57,7 @@ The **Library Management System** is a simple yet powerful application that allo
 # Frontend
 
 <a name="Client"></a>
+## Client
 
 1.Login
 
@@ -72,6 +73,8 @@ The library homepage serves as a patron's central portal, offering:
 ![Alt Text Description](clientPage.PNG)
 
 <a name="Admin"></a>
+## Admin
+
 1.User management
 Central interface for managing library patrons, allowing administrators to:
 - Create and manage user accounts
