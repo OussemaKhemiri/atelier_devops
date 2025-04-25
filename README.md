@@ -349,9 +349,74 @@ Authors management microservice with full CRUD and pagination system.
 
 <a name="Card"></a>
 ## Card
-...
+Secure library card management system with status tracking and access control features.
+### Technologies
+- Node.js
+- Express.js
+- Keycloak Authentication
+- Joi Validation Middleware
+### Functionalities
+- Card lifecycle management (create/update/delete)
+- Card status activation/deactivation
+- Access statistics tracking
+- Secure authentication integration
 
+### API Reference
 
+#### Get card by ID
+```http
+GET /api/cards/${id}
+```
+**Parameters**  
+| Parameter | Type   | Description       |
+|-----------|--------|-------------------|
+| id        | string | Required. Card ID |
+
+---
+#### Create new card
+```http
+POST /api/cards
+```
+**Body Parameters**  
+| Parameter | Type   | Description                                        |
+|-----------|--------|----------------------------------------------------|
+| cardData  | object | Required. Card details following schema validation |
+
+---
+#### Update card
+```http
+PUT /api/cards/${id}
+```
+**Parameters**  
+| Parameter | Type   | Description       |
+|-----------|--------|-------------------|
+| id        | string | Required. Card ID |
+
+---
+
+#### Delete card
+```http
+DELETE /api/cards/${id}
+```
+**Parameters**  
+| Parameter | Type   | Description       |
+|-----------|--------|-------------------|
+| id        | string | Required. Card ID |
+
+---
+#### Get card statistics
+```http
+GET /api/cards/stats
+```
+---
+#### Toggle card status
+```http
+PUT /api/cards/${id}/status
+```
+**Parameters**  
+| Parameter | Type   | Description       |
+|-----------|--------|-------------------|
+| id        | string | Required. Card ID |
 
 
 
