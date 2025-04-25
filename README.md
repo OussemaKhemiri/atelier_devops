@@ -123,6 +123,7 @@ GET /loan/{loanId}
 ```
 <a name="Book"></a>
 ## Book
+Centralized book management service with author/publisher linking and dynamic inventory status updates.
 ### Technologies
 - Java 17
 - Spring Boot 3.x
@@ -205,15 +206,146 @@ GET /loan/{loanId}
 
 <a name="Publisher"></a>
 ## Publisher
-...
+Centralized publisher management service with geolocation capabilities and demographic analytics.
+### Technologies
+- Java 17
+- Spring Boot 3.x
+- Spring Data JPA
+- H2 Database 
+
+### Functionalities
+- Complete CRUD operations for publishers
+- Multi-criteria search
+- Demographic statistics
+- Geolocated search
+- Data export
+- External service integration
+
+### API Reference
+
+### Gestion des éditeurs
+
+| Méthode | Endpoint                | Description                          |
+|---------|-------------------------|--------------------------------------|
+| GET     | `/publishers/all`       | Liste tous les éditeurs              |
+| GET     | `/publishers/getPub/{id}`| Récupère un éditeur par ID           |
+| POST    | `/publishers`           | Crée un nouvel éditeur               |
+| PUT     | `/publishers/update/{id}`| Met à jour un éditeur                |
+| DELETE  | `/publishers/delete/{id}`| Supprime un éditeur                  |
+
+### Recherche
+
+| Méthode | Endpoint                | Description                          |
+|---------|-------------------------|--------------------------------------|
+| GET     | `/publishers/search`    | Recherche par nom ou localisation    |
+| GET     | `/publishers/nearby`    | Recherche géolocalisée               |
+
+### Export
+
+| Méthode | Endpoint              | Description                          |
+|---------|-----------------------|--------------------------------------|
+| GET     | `/publishers/export`  | Export les publishers en un ficher csv |
+
+### Statistiques
+
+| Méthode | Endpoint                | Description                          |
+|---------|-------------------------|--------------------------------------|
+| GET     | `/publishers/stats-demographic` | Statistiques démographiques  |
 
 <a name="Genre"></a>
 ## Genre
-...
+Centralized genre management service with popularity tracking and categorization features.
+### Technologies
+- Java 17
+- Spring Boot 3.x
+- Spring Data JPA
+- H2 Database 
+### Functionalities
+- Complete CRUD operations for genres
+- Popularity score tracking
+- Top genres analytics
+
+### API Reference
+#### Get all Genres
+```http
+  GET /Genre/
+```
+| Parameter          | Type       | Description                        |
+| :------------------| :-------   | :----------------------------------|
+| `name`             | `string`   | **Required**. name of genre        |
+| `description`      | `string`   | **Required**. description of genre |
+| `popularity`       |  `integer` | **Required**. popularity of genre  |
+#### Get genre by id
+```http
+  GET /Genre/${id}
+```
+| Parameter | Type     | Description                        |
+| :-------- | :------- | :--------------------------------  |
+| `id`      | `string` | **Required**. Id of genre to fetch |
+
+#### Update genre by id
+```http
+  PUT /Genre/
+```
+| Parameter | Type       | Description                       |
+| :-------- | :-------   | :-------------------------------- |
+| `Genre`   | `genre`    | **Required**. updated genre       |
+
+
+#### Delete book by id
+```http
+  DELETE /Genre/${id}
+```
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of genre to fetch |
+
+
+#### Add a new book
+```http
+  POST /Genre/
+```
+#### Get Top 5 genres
+```http
+  GET /Genre/Top5
+```
 
 <a name="Author"></a>
 ## Author
-...
+Authors management microservice with full CRUD and pagination system.
+### Technologies
+- Java 17
+- Spring Boot 3.x
+- Spring Data JPA
+- H2 Database 
+## Functionalities
+- Complete CRUD for authors
+- Advanced pagination system
+- Multi-criteria search
+- Filtering by literary genre
+### API Endpoints
+
+#### Gestion des auteurs
+| Méthode | Endpoint               | Description                     |
+|---------|------------------------|---------------------------------|
+| GET     | `/author/all-list`     | Liste tous les auteurs          |
+| GET     | `/author/{id}`         | Récupère un auteur par ID       |
+| POST    | `/author`              | Crée un nouvel auteur           |
+| PUT     | `/author/update/{id}`  | Met à jour un auteur            |
+| DELETE  | `/author/delete/{id}`  | Supprime un auteur              |
+
+#### Recherche et pagination
+| Méthode | Endpoint               | Description                     |
+|---------|------------------------|---------------------------------|
+| GET     | `/author/search`       | Recherche paginée (nom/email)   |
+| GET     | `/author/all`          | Filtre paginé par genre         |
+
+#### Paramètres de pagination
+| Paramètre  | Description                          | Valeur par défaut |
+|------------|--------------------------------------|-------------------|
+| `page`     | Numéro de page (0-based)             | 0                 |
+| `size`     | Nombre d'éléments par page           | 10                |
+| `sort`     | Champ de tri (ex: name,asc)          | id                |
 
 <a name="Card"></a>
 ## Card
