@@ -40,22 +40,23 @@ The **Library Management System** is a simple yet powerful application that allo
 3.Technology
 ## System Architecture Overview
 
-| Architecture Layer       | Components                                                                 | Description                                                                 |
-|--------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| **Containerization**     | Docker                                                                     | Container orchestration for service deployment                              |
-| **API Gateway**          | Netflix Zuul                                                               | Routing and API request filtering                                           |
-| **Service Discovery**    | Eureka Server                                                              | Service registry for microservice coordination                              |
-| **Authentication**       | Keycloak                                                                   | Identity and Access Management (IAM) solution                               |
-| **Frontend**             | Angular                                                                    | Web interface                                                               |
-| **Microservices**        | Loan, Book, Publisher, Genre, Author, Card                                 | Domain-specific services                                                    |
-| **Databases**            | H2, MySQL, MongoDB                                                         | Polyglot persistence strategy                                               |
-| **OpenFeign**            | Spring OpenFeign                                                           | Declarative REST client for service-to-service communication                |
-| **Configuration Server** | Spring Config Server                                                       | Centralized configuration management                                        |
- 
+| Architecture Layer       | Components                                                                 | Description                                                    |
+|--------------------------|----------------------------------------------------------------------------|----------------------------------------------------------------|
+| **Containerization**     | Docker                                                                     | Container orchestration for service deployment                 |
+| **API Gateway**          | Netflix Zuul                                                               | Routing and API request filtering                              |
+| **Service Discovery**    | Eureka Server                                                              | Service registry for microservice coordination                 |
+| **Authentication**       | Keycloak                                                                   | Identity and Access Management (IAM) solution                  |
+| **Frontend**             | Angular                                                                    | Web interface                                                  |
+| **Microservices**        | Loan, Book, Publisher, Genre, Author, Card                                 | Domain-specific services                                       |
+| **Databases**            | H2, MySQL, MongoDB                                                         | Polyglot persistence strategy                                  |
+| **OpenFeign**            | Spring OpenFeign                                                           | Declarative REST client for service-to-service communication   |
+| **Configuration Server** | Spring Config Server                                                       | Centralized configuration management                           |
+| **Messaging**            | RabbitMQ                                                                   | Message broker for asynchronous communication                  | 
 ### Port Mapping
 - API Gateway : 8086
 - Eureka Server : 8761
 - Keycloak : 8082
+- RabbitMQ : 5672
 - Microservices : Loan(8090) , Book(8091) , Publisher(8092) , Genre(8089) , Author(8081) , Card(5000)
 - Databases : Mysql:3306 , MongoDB:27017
 - Configuration Server : 8888
