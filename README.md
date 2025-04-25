@@ -53,6 +53,13 @@ The **Library Management System** is a simple yet powerful application that allo
 | **Configuration Server** | Spring Config Server                                                       | Centralized configuration management                                        |
  
 ### Port Mapping
+- API Gateway : 8086
+- Eureka Server : 8761
+- Keycloak : 8082
+- Microservices : Loan(8090) , Book(8091) , Publisher(8092) , Genre(8089) , Author(8081) , Card(5000)
+- Databases : Mysql:3306 , MongoDB:27017
+- Configuration Server : 8888
+- Frontend : 4200
 
 
 # Frontend
