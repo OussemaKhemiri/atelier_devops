@@ -59,6 +59,7 @@ The **Library Management System** is a simple yet powerful application that allo
 <a name="Client"></a>
 
 1.Login
+
 The library login interface provides secure patron authentication through combined username and physical card number validation.
 
 ![Alt Text Description](loginPage.PNG)
