@@ -59,17 +59,17 @@ The **Library Management System** is a simple yet powerful application that allo
 <a name="Client"></a>
 
 1.Login
-![Alt Text Description](loginPage.png)
+![Alt Text Description](loginPage.PNG)
 2.Homepage
-![Alt Text Description](clientPage.png)
+![Alt Text Description](clientPage.PNG)
 
 <a name="Admin"></a>
 
 
 1.User management
-![Alt Text Description](adminbookPage.png)
+![Alt Text Description](adminbookPage.PNG)
 2.Book management
-![Alt Text Description](adminuserPage.png)
+![Alt Text Description](adminuserPage.PNG)
 
 
 
