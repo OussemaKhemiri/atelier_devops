@@ -8,7 +8,12 @@ The **Library Management System** is a simple yet powerful application that allo
 - [Class Diagram](#ClassDiagram)
 - [Technology](#Technology)
 ### Frontend
-
+- [Client](#Client)
+  1.Login
+  2.Homepage
+- [Admin](#Admin)
+  1.User management
+  2.Book management
 ### Backend
 - [Loan](#Loan)
 - [Book](#Book)
@@ -47,6 +52,28 @@ The **Library Management System** is a simple yet powerful application that allo
 | **OpenFeign**            | Spring OpenFeign                                                           | Declarative REST client for service-to-service communication                |
 | **Configuration Server** | Spring Config Server                                                       | Centralized configuration management                                        |
  
+
+
+# Frontend
+
+<a name="Client"></a>
+
+1.Login
+![Alt Text Description](loginPage.png)
+2.Homepage
+![Alt Text Description](clientPage.png)
+
+<a name="Admin"></a>
+
+
+1.User management
+![Alt Text Description](adminbookPage.png)
+2.Book management
+![Alt Text Description](adminuserPage.png)
+
+
+
+# Backend
 
 <a name="Loan"></a>
 ## Loan
