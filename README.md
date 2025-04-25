@@ -2,15 +2,36 @@
 
 The **Library Management System** is a simple yet powerful application that allows users to manage a collection of books. It provides functionalities to add, update, delete, and view books and some advanced functionalities making it ideal for libraries, personal collections, or educational institutions.
 
+## Navigation
+### Architecture
+- [Ecosystem](#Ecosystem)
+- [Class Diagram](#ClassDiagram)
+- [Technology](#Technology)
+### Frontend
+
+### Backend
+- [Loan](#Loan)
+- [Book](#Book)
+- [Publisher](#Publisher)
+- [Genre](#Genre)
+- [Author](#Author)
+- [Card](#Card)
+
+
+
+
 # Architecture 
+<a name="Ecosystem"></a>
 1.Containerized Library Management System with Spring Cloud Ecosystem
 
 ![Alt Text Description](diagramprojet.png)
 
+<a name="ClassDiagram"></a>
 2.Library Domain Model Class Diagram
 
 ![Alt Text Description](diagclasse.PNG)
 
+<a name="Technology"></a>
 3.Technology
 ## System Architecture Overview
 
@@ -26,15 +47,6 @@ The **Library Management System** is a simple yet powerful application that allo
 | **OpenFeign**            | Spring OpenFeign                                                           | Declarative REST client for service-to-service communication                |
 | **Configuration Server** | Spring Config Server                                                       | Centralized configuration management                                        |
  
-
-## Navigation
-* Backend
-- [Loan](#Loan)
-- [Book](#Book)
-- [Publisher](#Publisher)
-- [Genre](#Genre)
-- [Author](#Author)
-- [Card](#Card)
 
 <a name="Loan"></a>
 ## Loan
