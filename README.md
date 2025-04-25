@@ -85,7 +85,7 @@ The library login interface provides secure patron authentication through combin
 <a name="Admin"></a>
 ## Admin
 
-1.User management (admin/loans-users) :
+1.User management (/admin/loans-users) :
 
  Central interface for managing library patrons, allowing administrators to:
 - Create and manage user accounts
