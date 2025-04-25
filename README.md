@@ -52,6 +52,7 @@ The **Library Management System** is a simple yet powerful application that allo
 | **OpenFeign**            | Spring OpenFeign                                                           | Declarative REST client for service-to-service communication                |
 | **Configuration Server** | Spring Config Server                                                       | Centralized configuration management                                        |
  
+### Port Mapping
 
 
 # Frontend
