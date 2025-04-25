@@ -75,6 +75,7 @@ The library login interface provides secure patron authentication through combin
 ![Alt Text Description](loginPage.PNG)
 
 2.Homepage (/)
+
 The library homepage serves as a patron's central portal, offering:
 - Dynamic book catalog browsing with filter/sort capabilities
 - Visual timeline of current/past loans
@@ -85,6 +86,7 @@ The library homepage serves as a patron's central portal, offering:
 ## Admin
 
 1.User management (admin/loans-users)
+
 Central interface for managing library patrons, allowing administrators to:
 - Create and manage user accounts
 - Issue and link library cards to users
@@ -93,6 +95,7 @@ Central interface for managing library patrons, allowing administrators to:
 ![Alt Text Description](adminbookPage.PNG)
 
 2.Book management (/admin/books)
+
 - Central interface for managing library catalog data, enabling administrators to:
 - Create/Edit Books: Add new titles, update metadata, manage inventory
 - Manage Authors & Publishers: Maintain creator/organization databases
