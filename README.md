@@ -9,11 +9,11 @@ The **Library Management System** is a simple yet powerful application that allo
 - [Technology](#Technology)
 ### Frontend
 - [Client](#Client)
-  1.Login
-  2.Homepage
+  - Login
+  - Homepage
 - [Admin](#Admin)
-  1.User management
-  2.Book management
+  - User management
+  - Book management
 ### Backend
 - [Loan](#Loan)
 - [Book](#Book)
